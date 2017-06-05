@@ -1,0 +1,25 @@
+{
+  "name": "Schultz",
+  "authors": [
+    "Vinícius Rodrigues <vinicius@handhead.com.br>"
+  ],
+  "description": "Django's best friend.",
+  "main": "index.html",
+  "keywords": [
+    "django",
+    "semantic-ui",
+    "frontend"
+  ],
+  "license": "MIT",
+  "homepage": "handhead.com.br",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic": "semantic-ui#^2.2.10"
+  }
+}

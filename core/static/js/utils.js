@@ -1,12 +1,23 @@
-const togglePassword = function (e) {
-    if (e.keyCode === 0 || e.keyCode === 32) e.preventDefault()
+const togglePassword = function (event) {
+    /**
+     * Javascript Char Codes (Key Codes)
+     * @docs https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+     */
+    switch (event.keyCode) {
+        case 0:
+        case 9:
+        case 16:
+        case 32:
+            e.preventDefault()
+            break
+    }
 
     let icon = $(this).children()
-    let password = $(this).parent().children('input')
+    let input = $(this).parent().children('input')
 
     icon.toggleClass('unhide').toggleClass('hide')
-    if (icon.hasClass('hide')) password.attr('type', 'text')
-    else password.attr('type', 'password')
+    if (icon.hasClass('hide')) input.attr('type', 'text')
+    else input.attr('type', 'password')
 }
 
 $(document).ready(() => {

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Schultz | Entrar</title>
+    <title>Schultz | Registrar-se</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="vendors/semantic/dist/semantic.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 
         <div class="ui centered grid container">
             <div class="nine wide column">
-                <div class="ui icon warning message">
+                <!--<div class="ui icon warning message">
                     <i class="lock icon"></i>
                     <div class="content">
                         <div class="header">
@@ -28,8 +28,9 @@
                             <strong>nome de usuário</strong> ou <strong>senha</strong>!
                         </p>
                     </div>
-                </div>
+                </div>-->
                 <div class="ui fluid card">
+
                     <div class="content">
                         <form class="ui form" method="POST">
                             <div class="field">
@@ -37,6 +38,13 @@
                                 <div class="ui left icon input">
                                     <input type="text" name="username" placeholder="fulano">
                                     <i class="user icon"></i>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>Email</label>
+                                <div class="ui left icon input">
+                                    <input type="email" name="email" placeholder="fulano@handhead.com.br">
+                                    <i class="mail icon"></i>
                                 </div>
                             </div>
                             <div class="field">
@@ -51,13 +59,12 @@
                             </div>
                             <div class="ui error message"></div>
                             <div class="ui animated primary right floated submit button" tabindex="0">
-                                <div class="visible content">Entrar</div>
+                                <div class="visible content">Registrar</div>
                                 <div class="hidden content">
-                                    <i class="sign in icon"></i>
+                                    <i class="add user icon"></i>
                                 </div>
                             </div>
                         </form>
-
                         <script>
                             $('.ui.form').form({
                                 fields: {
@@ -66,6 +73,16 @@
                                         rules: [{
                                             type: 'empty',
                                             prompt: 'Por favor escreva um nome de usuário'
+                                        }]
+                                    },
+                                    email: {
+                                        identifier: 'email',
+                                        rules: [{
+                                            type: 'empty',
+                                            prompt: 'Por favor escreva um e-mail'
+                                        }, {
+                                            type: 'email',
+                                            prompt: 'Por favor escreva um e-mail válido'
                                         }]
                                     },
                                     password: {
@@ -82,14 +99,16 @@
                             })
                         </script>
                     </div>
+
                     <div class="content">
                         <div class="ui center aligned">
-                            <a class="ui secondary labeled icon button" href="signin.html" tabindex="0">
-                                Registrar-se
-                                <i class="add user icon"></i>
+                            <a class="ui secondary labeled icon button" href="login.html" tabindex="0">
+                                Entrar
+                                <i class="sign in icon"></i>
                             </a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

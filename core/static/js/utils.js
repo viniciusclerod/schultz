@@ -20,7 +20,14 @@ const togglePassword = function (event) {
     else input.attr('type', 'password')
 }
 
+const growTextarea = function (event) {
+    var height = $(this).scrollTop()
+    if (height > 0) $(this).height($(this).height() + height)
+    $(this).scrollTop($(this).height())
+}
+
 $(document).ready(() => {
     $('button.toggle.password').click(togglePassword)
     $('button.toggle.password').keydown(togglePassword)
+    $('textarea.expand').scroll(growTextarea)
 })

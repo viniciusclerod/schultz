@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Schultz | Pergunte</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="vendors/semantic/dist/semantic.min.css" rel="stylesheet">
+    <link href="css/commons.css" rel="stylesheet">
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <script src="vendors/semantic/dist/components/form.js"></script>
+    <script src="js/utils.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="ui container">
+
+            <div class="ui pointing menu">
+                <a class="item" href="feed.html">
+                    <i class="feed icon"></i>
+                    Feed
+                </a>
+                <a class="active item" href="ask.html">
+                    <i class="comment icon"></i>
+                    Perguntar
+                </a>
+                <a class="item">Messages</a>
+                <a class="item">Friends</a>
+                <div class="right menu">
+                    <div class="item">
+                        <div class="ui transparent icon input">
+                            <input type="text" placeholder="Search...">
+                            <i class="search link icon"></i>
+                        </div>
+                    </div>
+                    <a class="item" href="login.html">
+                        <i class="sign out icon"></i>
+                        Sair
+                    </a>
+                </div>
+            </div>
+
+            <div class="ui segment">
+                <form class="ui form" action="feed.html" method="POST">
+                    <div class="field">
+                        <label>Título da Pergunta</label>
+                        <input type="text" name="ask" placeholder="O que te aflinge?" tabindex="0">
+                    </div>
+                    <div class="field">
+                        <label>Descrição do Problema</label>
+                        <textarea class="expand" name="details" rows="2"  placeholder="De que forma?" tabindex="0"></textarea>
+                    </div>
+                    <div class="ui error message"></div>
+                    <div class="ui animated primary submit button" tabindex="0">
+                        <div class="visible content">Perguntar</div>
+                        <div class="hidden content">
+                            <i class="add icon"></i>
+                        </div>
+                    </div>
+                </form>
+
+                <script>
+                    $('.ui.form').form({
+                        fields: {
+                            ask: {
+                                identifier: 'ask',
+                                rules: [{
+                                    type: 'empty',
+                                    prompt: 'Por favor, escreva um título para a pergunta'
+                                },{
+                                    type: 'regExp[/^.+[?]$/]',
+                                    prompt: 'Toda pergunta precisa de um ponto de interrogação'
+                                }]
+                            },
+                            details: {
+                                identifier: 'details',
+                                rules: [{
+                                    type: 'empty',
+                                    prompt: 'Por favor, escreva uma descrição do problema'
+                                }]
+                            },
+                        }
+                    })
+                </script>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

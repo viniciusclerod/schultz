@@ -27,7 +27,11 @@ const growTextarea = function (event) {
 }
 
 $(document).ready(() => {
+    // Semantic UI Actions
+    $('.ui.dropdown').dropdown()
+    // Custom Actions
     $('button.toggle.password').click(togglePassword)
     $('button.toggle.password').keydown(togglePassword)
     $('textarea.expand').scroll(growTextarea)
+    
 })

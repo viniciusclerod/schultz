@@ -8,6 +8,7 @@
     <link href="vendors/semantic/dist/semantic.min.css" rel="stylesheet">
     <link href="css/commons.css" rel="stylesheet">
     <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <script src="vendors/semantic/dist/semantic.min.js"></script>
     <script src="js/utils.js"></script>
 </head>
 
@@ -40,76 +41,101 @@
                 </div>
             </div>
 
-            <div class="ui clearing segment">
-                <div class="ui large feed">
-
-                    <div class="event">
-                        <div class="label">
-                            <img src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+            <div class="ui segments">
+                <header class="ui clearing segment">
+                    <div class="ui right floated floating labeled icon dropdown button">
+                        <i class="filter icon"></i>
+                        <span class="text">Filter</span>
+                        <div class="menu">
+                            <div class="header">
+                                <i class="tags icon"></i> Filter by tag
+                            </div>
+                            <div class="divider"></div>
+                            <div class="item">
+                                Important
+                            </div>
+                            <div class="item">
+                                Announcement
+                            </div>
+                            <div class="item">
+                                Discussion
+                            </div>
                         </div>
-                        <div class="content">
-                            <div class="summary">
-                                <a class="user">Steve Jobs</a> fez uma <a>pergunta</a>
-                                <div class="date">1 hora atrás</div>
+                    </div>
+                </header>
+                <div class="ui segment">
+                    <div class="ui large feed">
+
+                        <div class="event">
+                            <div class="label">
+                                <img src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
                             </div>
-                            <div class="extra text">
-                                Qual o nome do sistema operacional mais sofisticado do mundo?
-                            </div>
-                            <div class="meta">
-                                <a>
+                            <div class="content">
+                                <div class="summary">
+                                    <a class="user">Steve Jobs</a> fez uma <a>pergunta</a>
+                                    <div class="date">1 hora atrás</div>
+                                </div>
+                                <div class="extra text">
+                                    Qual o nome do sistema operacional mais sofisticado do mundo?
+                                </div>
+                                <div class="meta">
+                                    <a>
                                     <i class="comments icon"></i>
                                     3 respostas
                                 </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
 
-                    <div class="event">
-                        <div class="label">
-                            <img src="https://semantic-ui.com/images/avatar/small/helen.jpg">
-                        </div>
-                        <div class="content">
-                            <div class="summary">
-                                <a class="user">Helen Troy</a> fez uma <a>pergunta</a>
-                                <div class="date">7 horas atrás</div>
+                        <div class="event">
+                            <div class="label">
+                                <img src="https://semantic-ui.com/images/avatar/small/helen.jpg">
                             </div>
-                            <div class="extra text">
-                                Gema, gema, gema, qual o nome da clara do ovo?
-                            </div>
-                            <div class="meta">
-                                <a>
+                            <div class="content">
+                                <div class="summary">
+                                    <a class="user">Helen Troy</a> fez uma <a>pergunta</a>
+                                    <div class="date">7 horas atrás</div>
+                                </div>
+                                <div class="extra text">
+                                    Gema, gema, gema, qual o nome da clara do ovo?
+                                </div>
+                                <div class="meta">
+                                    <a>
                                     <i class="comments icon"></i>
                                     7 respostas
                                 </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
-                <div class="ui right floated buttons">
-                    <button class="ui icon disabled button">
+                <footer class="ui clearing segment">
+                    <div class="ui right floated buttons">
+                        <button class="ui icon disabled button">
                             <i class="left chevron icon"></i>
                         </button>
-                    <button class="ui active button">
+                        <button class="ui active button">
                             1
                         </button>
-                    <button class="ui button">
+                        <button class="ui button">
                             2
                         </button>
-                    <button class="ui button">
+                        <button class="ui button">
                             3
                         </button>
-                    <button class="ui button">
+                        <button class="ui button">
                             4
                         </button>
-                    <button class="ui button">
+                        <button class="ui button">
                             5
                         </button>
-                    <button class="ui right icon button">
+                        <button class="ui right icon button">
                             <i class="right chevron icon"></i>
                         </button>
-                </div>
+                    </div>
+                </footer>
             </div>
 
         </div>

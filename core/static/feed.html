@@ -6,141 +6,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="vendors/semantic/dist/semantic.min.css" rel="stylesheet">
+    <link href="css/commons.css" rel="stylesheet">
     <script src="vendors/jquery/dist/jquery.min.js"></script>
     <script src="js/utils.js"></script>
 </head>
 
 <body>
+    <main>
+        <div class="ui container">
 
-    <div class="ui container">
-
-        <div class="ui pointing menu">
-            <a class="active item">Feed</a>
-            <a class="item">Messages</a>
-            <a class="item">Friends</a>
-            <div class="right menu">
-                <div class="item">
-                    <div class="ui transparent icon input">
-                        <input type="text" placeholder="Search...">
-                        <i class="search link icon"></i>
-                    </div>
-                </div>
-                <a class="item" href="login.html">Login</a>
-            </div>
-        </div>
-        <div class="ui segment">
-            <div class="ui feed">
-                <div class="event">
-                    <div class="label">
-                        <img src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
-                    </div>
-                    <div class="content">
-                        <div class="summary">
-                            <a class="user">
-          Elliot Fu
-        </a> added you as a friend
-                            <div class="date">
-                                1 Hour Ago
-                            </div>
-                        </div>
-                        <div class="meta">
-                            <a class="like">
-          <i class="like icon"></i> 4 Likes
-        </a>
+            <div class="ui pointing menu">
+                <a class="active item" href="feed.html">Feed</a>
+                <a class="item">Messages</a>
+                <a class="item">Friends</a>
+                <div class="right menu">
+                    <div class="item">
+                        <div class="ui transparent icon input">
+                            <input type="text" placeholder="Search...">
+                            <i class="search link icon"></i>
                         </div>
                     </div>
-                </div>
-                <div class="event">
-                    <div class="label">
-                        <img src="https://semantic-ui.com/images/avatar/small/helen.jpg">
-                    </div>
-                    <div class="content">
-                        <div class="summary">
-                            <a>Helen Troy</a> added <a>2 new illustrations</a>
-                            <div class="date">
-                                4 days ago
-                            </div>
-                        </div>
-                        <div class="extra images">
-                            <a><img src="https://semantic-ui.com/images/wireframe/image.png"></a>
-                            <a><img src="https://semantic-ui.com/images/wireframe/image.png"></a>
-                        </div>
-                        <div class="meta">
-                            <a class="like">
-          <i class="like icon"></i> 1 Like
-        </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="event">
-                    <div class="label">
-                        <img src="https://semantic-ui.com/images/avatar/small/jenny.jpg">
-                    </div>
-                    <div class="content">
-                        <div class="summary">
-                            <a class="user">
-          Jenny Hess
-        </a> added you as a friend
-                            <div class="date">
-                                2 Days Ago
-                            </div>
-                        </div>
-                        <div class="meta">
-                            <a class="like">
-          <i class="like icon"></i> 8 Likes
-        </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="event">
-                    <div class="label">
-                        <img src="https://semantic-ui.com/images/avatar/small/joe.jpg">
-                    </div>
-                    <div class="content">
-                        <div class="summary">
-                            <a>Joe Henderson</a> posted on his page
-                            <div class="date">
-                                3 days ago
-                            </div>
-                        </div>
-                        <div class="extra text">
-                            Ours is a life of constant reruns. We're always circling back to where we'd we started, then starting all over again. Even
-                            if we don't run extra laps that day, we surely will come back for more of the same another day
-                            soon.
-                        </div>
-                        <div class="meta">
-                            <a class="like">
-          <i class="like icon"></i> 5 Likes
-        </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="event">
-                    <div class="label">
-                        <img src="https://semantic-ui.com/images/avatar/small/justen.jpg">
-                    </div>
-                    <div class="content">
-                        <div class="summary">
-                            <a>Justen Kitsune</a> added <a>2 new photos</a> of you
-                            <div class="date">
-                                4 days ago
-                            </div>
-                        </div>
-                        <div class="extra images">
-                            <a><img src="https://semantic-ui.com/images/wireframe/image.png"></a>
-                            <a><img src="https://semantic-ui.com/images/wireframe/image.png"></a>
-                        </div>
-                        <div class="meta">
-                            <a class="like">
-          <i class="like icon"></i> 41 Likes
-        </a>
-                        </div>
-                    </div>
+                    <a class="item" href="login.html">Sair</a>
                 </div>
             </div>
-        </div>
 
-    </div>
+            <div class="ui segment">
+                <div class="ui large feed">
+
+                    <div class="event">
+                        <div class="label">
+                            <img src="https://semantic-ui.com/images/avatar/small/elliot.jpg">
+                        </div>
+                        <div class="content">
+                            <div class="summary">
+                                <a class="user">Steve Jobs</a> fez uma <a>pergunta</a>
+                                <div class="date">1 hora atrás</div>
+                            </div>
+                            <div class="extra text">
+                                Qual o nome do sistema operacional mais sofisticado do mundo?
+                            </div>
+                            <div class="meta">
+                                <a>
+                                    <i class="talk icon"></i>
+                                    3 respostas
+                                </a>
+                                <a>
+                                    <i class="comments icon"></i>
+                                    2 comentários
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="event">
+                        <div class="label">
+                            <img src="https://semantic-ui.com/images/avatar/small/helen.jpg">
+                        </div>
+                        <div class="content">
+                            <div class="summary">
+                                <a class="user">Helen Troy</a> fez uma <a>pergunta</a>
+                                <div class="date">7 horas atrás</div>
+                            </div>
+                            <div class="extra text">
+                                Gema, gema, gema, qual o nome da clara do ovo?
+                            </div>
+                            <div class="meta">
+                                <a>
+                                    <i class="talk icon"></i>
+                                    7 respostas
+                                </a>
+                                <a>
+                                    <i class="comments icon"></i>
+                                    4 comentários
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </main>
 </body>
 
 </html>
